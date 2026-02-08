@@ -1,5 +1,5 @@
 const conteudos = [
-  { nome: "Home", url: "main.html", palavras: ["home", "inicio", "principal"] },
+  { nome: "Home", url: "index.html", palavras: ["home", "inicio", "principal"] },
   { nome: "História do Voleibol", url: "Historia.html", palavras: ["historia", "história", "origem", "voleibol"] },
   { nome: "Regras do Voleibol", url: "Regras.html", palavras: ["regras", "regulamento", "pontuação"] },
 
