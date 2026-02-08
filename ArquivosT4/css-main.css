@@ -244,3 +244,32 @@ a{
 .card{
     width: 100%;
 }
+
+.search-wrapper {
+  width: 220px; /* controla largura do input */
+}
+
+.sugestoes {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  background-color: #192a50;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 3000;
+}
+
+/* Itens */
+.sugestoes .list-group-item {
+  background-color: #192a50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Hover */
+.sugestoes .list-group-item:hover {
+  background-color: #ff5733;
+}

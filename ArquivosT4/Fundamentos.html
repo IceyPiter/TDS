@@ -16,9 +16,23 @@
     <img class="img-navbar d-inline-block" src="assets/Volleyball-logo.png" alt="">
     <h3 class="text-white fw-light ms-3">WebVolei</h3>
     <div class="login container-fluid" style="margin-right: 60px;">
-        <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light text-white" type="submit">Search</button>
+      <form class="d-flex align-items-center" onsubmit="buscarPagina(event)">
+
+        <div class="search-wrapper position-relative">
+          <input 
+            id="searchInput"
+            class="form-control"
+            type="search"
+            placeholder="Pesquisar conteúdo..."
+            autocomplete="off"
+            oninput="mostrarSugestoes()"
+          >
+          <!-- Sugestões -->
+          <ul id="sugestoes" class="list-group sugestoes"></ul>
+        </div>
+        <button class="btn btn-outline-light text-white ms-2" type="submit">
+          Search
+        </button>
       </form>
     </div>
   </div>
@@ -371,6 +385,7 @@
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script>feather.replace()</script>
+<script src="script.js"></script>
 <script src="wow.min.js"></script><script>new WOW().init();</script>
 </body>
 </html>
