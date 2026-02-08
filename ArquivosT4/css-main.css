@@ -271,5 +271,6 @@ a{
 
 /* Hover */
 .sugestoes .list-group-item:hover {
-  background-color: #ff5733;
+  background-color: #ffffff;
+  color: black;
 }
